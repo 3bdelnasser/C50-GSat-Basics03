@@ -203,15 +203,31 @@ namespace C50_GSat_Basics03
             /*Using the same books array, print every title except "The Pragmatic Programmer" (skip it with 
             continue, don't stop the loop).*/
 
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            //foreach (string book in books)
+            //{
+            //    if (book == "The Pragmatic Programmer") continue;
+
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+            #region Question 18
+            /*Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, 
+            use return to exit the method early instead of printing anything.*/
+
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-            foreach (string book in books)
-            {
-                if (book == "The Pragmatic Programmer") continue;
-
-                Console.WriteLine(book);
-            }
+            PrintFirstBook(books);
             #endregion
+        }
+
+        public static void PrintFirstBook(string[] arr)
+        {
+            if (arr.Length == 0) return;
+
+            Console.WriteLine(arr[0]);
         }
     }
 }
