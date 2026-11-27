@@ -217,17 +217,17 @@ namespace C50_GSat_Basics03
             /*Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, 
             use return to exit the method early instead of printing anything.*/
 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-            PrintFirstBook(books);
+            //PrintFirstBook(books);
             #endregion
         }
 
-        public static void PrintFirstBook(string[] arr)
-        {
-            if (arr.Length == 0) return;
+        //public static void PrintFirstBook(string[] arr)
+        //{
+        //    if (arr.Length == 0) return;
 
-            Console.WriteLine(arr[0]);
-        }
+        //    Console.WriteLine(arr[0]);
+        //}
     }
 }
